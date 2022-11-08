@@ -1,0 +1,86 @@
+.logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem;
+}
+.box-login {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    margin-top: 2rem;
+
+    .texto-login {
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    .cadastro {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        margin-top: 1.5rem;
+        
+        a {
+            color: #78B5FD;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
+    }
+
+    .campos {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        line-height: 2rem;
+        color: #fff;
+    }
+
+    .esquecer-senha {
+        display: flex;
+        justify-content: flex-end;
+        color: #78B5FD;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+    .fazer-login {
+        display: flex;
+        justify-content: center;
+
+        .botao-login {
+            padding: 0.5rem;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            background-color: #3190E8;
+            border: 1px solid #111;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
