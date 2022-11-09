@@ -1,0 +1,10 @@
+.conta-pessoa-usuaria {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.5rem;
+    padding: 1rem;
+
+    mat-icon {
+        cursor: pointer;
+    }
+}

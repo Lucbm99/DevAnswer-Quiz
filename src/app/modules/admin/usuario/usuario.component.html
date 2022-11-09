@@ -1,0 +1,34 @@
+<section class="conta">
+
+    <div class="box-conta">
+        <p class="texto-conta">Minha conta</p>
+
+        <form class="campos">
+            <mat-form-field appearance="outline">
+                <mat-label>Nome completo:</mat-label>
+                <input matInput type="text" value="Lucas Baradel Marchiori">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Nome da pessoa usuária:</mat-label>
+                <input matInput type="text" value="Lucbm99">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>E-mail:</mat-label>
+                <input matInput type="email" value="lbaradelmarchiori@gmail.com">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Senha:</mat-label>
+                <input matInput type="password" placeholder="Digite sua senha...">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Redigite a senha:</mat-label>
+                <input matInput type="password" placeholder="Redigite sua senha...">
+            </mat-form-field>
+        </form>
+
+        <div class="alterar-conta">
+            <button class="botao-alterar-dados" (click)="dadosAlterados()">Alterar</button>
+            <button class="botao-fazer-logout" (click)="fazerLogout()">Fazer logout</button>
+        </div>
+    </div>
+</section>

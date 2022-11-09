@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { RouterModule } from '@angular/router';
-import { EsquecerSenhaComponent } from './esquecer-senha.component';
-import { rotaEsquecerSenha } from './esquecer-senha.routing';
+import { rotaCadastro } from './cadastro.routing';
+import { CadastroComponent } from './cadastro.component';
 
 
 @NgModule({
   declarations: [
-    EsquecerSenhaComponent
+    CadastroComponent
   ],
   imports: [
-    RouterModule.forChild(rotaEsquecerSenha),
+    RouterModule.forChild(rotaCadastro),
     CommonModule,
     MatInputModule,
     MatFormFieldModule,
   ]
 })
-export class EsquecerSenhaModule { }
+export class CadastroModule { }

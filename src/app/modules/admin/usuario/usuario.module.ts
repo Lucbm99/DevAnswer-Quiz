@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { RouterModule } from '@angular/router';
-import { rotasLogin } from './login.routing';
-import { LoginComponent } from './login.component';
+import { UsuarioComponent } from './usuario.component';
+import { rotaUsuario } from './usuario.routing';
 
 
 @NgModule({
   declarations: [
-    LoginComponent
+    UsuarioComponent
   ],
   imports: [
-    RouterModule.forChild(rotasLogin),
+    RouterModule.forChild(rotaUsuario),
     CommonModule,
-    MatInputModule,
-    MatFormFieldModule,
+    MatInputModule, 
+    MatFormFieldModule
   ]
 })
-export class LoginModule { }
+export class UsuarioModule { }

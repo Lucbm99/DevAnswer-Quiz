@@ -2,11 +2,13 @@
 
     <div class="box-esquecer-senha">
         <p class="texto-esquecer-senha">Esquecer senha</p>
-        <span class="descricao-esquecer-senha">Preencha o formulário a seguir, para recuperar a senha: </span>
+        <span class="descricao-esquecer-senha">Preencha o campo a seguir, para recuperar a senha: </span>
 
         <form class="campos">
-            <label>E-mail:</label>
-            <input matInput type="email" placeholder="Digite seu e-mail...">
+            <mat-form-field appearance="outline">
+                <mat-label>E-mail:</mat-label>
+                <input matInput type="email" placeholder="Digite seu e-mail...">
+            </mat-form-field>
         </form>
 
         <div class="enviar-email">

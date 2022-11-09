@@ -1,13 +1,13 @@
-.esquecer-senha {
+.cadastro {
     padding: 3rem;
 
-    .box-esquecer-senha {
+    .box-cadastro {
         display: flex;
         flex-direction: column;
         margin: 4rem;
         margin-top: 2rem;
 
-        .texto-esquecer-senha {
+        .texto-cadastro {
             color: #fff;
             font-family: 'Inter', sans-serif;
             font-style: normal;
@@ -15,19 +15,30 @@
             font-weight: 700;
         }
 
-        .descricao-esquecer-senha {
+        .descricao-cadastro {
             color: #fff;
             font-size: 1rem;
             font-weight: 400;
             font-family: 'Inter', sans-serif;
             margin-top: 1.5rem;
+            
+            a {
+                color: #78B5FD;
+                cursor: pointer;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+            }
         }
 
         .campos {
             margin-top: 1rem;
             display: flex;
             flex-direction: column;
-            line-height: 1rem;
+            line-height: 2rem;
             color: #fff;
 
             // mat-icon-stepper selected color change 
@@ -57,46 +68,29 @@
             }
         }
 
-        .enviar-email {
+        .fazer-cadastro {
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            align-items: center;
-            margin-top: 1rem;
 
-            .botao-enviar {
+            .botao-cadastro {
                 padding: 0.5rem;
                 width: 20%;
                 display: flex;
                 justify-content: center;
-                background-color: #3190E8;
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 1rem;
+                background-color: #3190E8;
                 border: 1px solid #111;
                 border-radius: 10px;
+                margin-top: 1rem;
                 color: #fff;
                 cursor: pointer;
         
                 &:hover {
                     text-decoration: underline;
                 }
-            }
-            .voltar-login {
-                margin-top: 1rem;
-                text-decoration: none;
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 1rem;
-                color: #78B5FD;
-                cursor: pointer;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-
             }
         }
     }

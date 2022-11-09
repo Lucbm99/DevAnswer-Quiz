@@ -11,13 +11,11 @@ import { LoginModule } from './modules/auth/login/login.module';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
