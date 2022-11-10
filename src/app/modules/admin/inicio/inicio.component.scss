@@ -8,3 +8,90 @@
         cursor: pointer;
     }
 }
+.box-cards-exercicios {
+
+    p {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+    }
+
+    .area-botoes-stacks {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .botoes-areas {
+        padding: 0.5rem;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        margin: 0.6rem;
+        color: #111;
+        background-color: #78B5FD;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .cards-questionario {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 2rem;
+
+        .example-card {
+            margin-top: 1rem;
+            max-width: 16rem;
+
+            .area-conhecimento {
+                background-color: #6232CA;
+                width: 20vw;
+                height: 20vw;
+                margin-bottom: 1.4rem;
+                margin-left: -0.4rem;
+                margin-right: -0.4rem;
+                margin-top: -0.4rem;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    color: #fff;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 2rem;
+                }
+            }
+
+            mat-card-actions {
+                display: flex;
+                justify-content: center;
+                margin-top: -1.4rem;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+        
+        .example-header-image {
+            background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+            background-size: cover;
+        }
+    }
+}

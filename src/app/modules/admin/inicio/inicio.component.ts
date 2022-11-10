@@ -18,4 +18,8 @@ export class InicioComponent implements OnInit {
   paginaUsuario() {
     this.router.navigateByUrl('/usuario')
   }
+
+  telaPerguntas() {
+    this.router.navigateByUrl('/perguntas')
+  }
 }

@@ -7,6 +7,7 @@ const routes: Routes = [
   {path: 'cadastro', loadChildren: () => import('./modules/auth/cadastro/cadastro.module').then(m => m.CadastroModule)},
   {path: 'inicio', loadChildren: () => import('./modules/admin/inicio/inicio.module').then(m => m.InicioModule)},
   {path: 'usuario', loadChildren: () => import('./modules/admin/usuario/usuario.module').then(m => m.UsuarioModule)},
+  {path: 'perguntas', loadChildren: () => import('./modules/admin/perguntas/perguntas.module').then(m => m.PerguntasModule)},
 ];
 
 @NgModule({

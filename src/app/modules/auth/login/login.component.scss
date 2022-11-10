@@ -1,121 +1,125 @@
-.logo {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    font-size: 2.4rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 3rem;
-}
-.box-login {
-    display: flex;
-    flex-direction: column;
-    margin: 4rem;
-    margin-top: 2rem;
-
-    .texto-login {
+.login {
+    padding: 3rem;
+    
+    .logo {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: #fff;
         font-family: 'Inter', sans-serif;
+        font-size: 2.4rem;
         font-style: normal;
-        font-size: 1.4rem;
-        font-weight: 700;
-    }
-
-    .cadastro {
-        color: #fff;
-        font-size: 1rem;
         font-weight: 400;
-        font-family: 'Inter', sans-serif;
-        margin-top: 1.5rem;
-        
-        a {
+        line-height: 3rem;
+    }
+    .box-login {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem;
+        margin-top: 2rem;
+
+        .texto-login {
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .cadastro {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: 'Inter', sans-serif;
+            margin-top: 1.5rem;
+            
+            a {
+                color: #78B5FD;
+                cursor: pointer;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+            }
+        }
+
+        .campos {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            line-height: 2rem;
+            color: #fff;
+
+            // mat-icon-stepper selected color change 
+            ::ng-deep .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+                color: #fff!important;
+            }
+
+            //input outline color
+            ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+                color: #fff!important;
+            }
+
+            ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+                color: #fff!important;
+            }
+
+            ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+                color: #fff!important;
+            }
+
+            ::ng-deep .mat-form-field-label{
+                color: #fff;
+            }
+
+            ::ng-deep .mat-input-element::placeholder{
+                color: #fff;
+            }
+        }
+
+        .esquecer-senha {
             color: #78B5FD;
-            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
             text-decoration: none;
+            cursor: pointer;
+            margin-top: 1rem;
 
             &:hover {
                 text-decoration: underline;
             }
 
         }
-    }
 
-    .campos {
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        line-height: 2rem;
-        color: #fff;
-
-        // mat-icon-stepper selected color change 
-        ::ng-deep .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
-            color: #fff!important;
-        }
-
-        //input outline color
-        ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
-            color: #fff!important;
-        }
-
-        ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
-            color: #fff!important;
-        }
-
-        ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
-            color: #fff!important;
-        }
-
-        ::ng-deep .mat-form-field-label{
-            color: #fff;
-        }
-
-        ::ng-deep .mat-input-element::placeholder{
-            color: #fff;
-        }
-    }
-
-    .esquecer-senha {
-        color: #78B5FD;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1rem;
-        text-decoration: none;
-        cursor: pointer;
-        margin-top: 1rem;
-
-        &:hover {
-            text-decoration: underline;
-        }
-
-    }
-
-    .fazer-login {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .botao-login {
-            padding: 0.5rem;
-            width: 20%;
+        .fazer-login {
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            background-color: #3190E8;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1rem;
-            border: 1px solid #111;
-            border-radius: 10px;
-            color: #fff;
-            cursor: pointer;
-    
-            &:hover {
-                text-decoration: underline;
+            align-items: center;
+
+            .botao-login {
+                padding: 0.5rem;
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                background-color: #3190E8;
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+                border: 1px solid #111;
+                border-radius: 10px;
+                color: #fff;
+                cursor: pointer;
+        
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

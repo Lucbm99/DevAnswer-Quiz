@@ -1,0 +1,49 @@
+.perguntas {
+    p {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #fff;
+        margin: 1rem;
+    }
+    .example-radio-group {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0;
+        align-items: flex-start;
+        color: #fff;
+    }
+    
+    .example-radio-button {
+        margin: 5px;
+        color: #fff;
+    }
+
+    .proxima-questao {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: end;
+        padding-right: 0.5rem;
+        
+        .avancar {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            background-color: #35E831;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            border: 1px solid #111;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
