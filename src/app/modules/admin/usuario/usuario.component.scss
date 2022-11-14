@@ -51,8 +51,8 @@
 
         .alterar-conta {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
 
             .botao-alterar-dados {
@@ -75,7 +75,7 @@
                     text-decoration: underline;
                 }
             }
-            .botao-fazer-logout {
+            .botao-voltar {
                 padding: 0.5rem;
                 width: 20%;
                 display: flex;
@@ -85,6 +85,32 @@
                 font-weight: 400;
                 font-size: 1rem;
                 background-color: #E83C31;
+                border: 1px solid #111;
+                border-radius: 10px;
+                margin-top: 1rem;
+                color: #fff;
+                cursor: pointer;
+        
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .logout {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .botao-fazer-logout {
+                padding: 0.5rem;
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+                background-color: #263D80;
                 border: 1px solid #111;
                 border-radius: 10px;
                 margin-top: 1rem;

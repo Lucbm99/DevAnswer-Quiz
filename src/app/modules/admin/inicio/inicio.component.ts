@@ -19,6 +19,14 @@ export class InicioComponent implements OnInit {
     this.router.navigateByUrl('/usuario')
   }
 
+  paginaBack() {
+    this.router.navigateByUrl('/inicio-back')
+  }
+
+  paginaMobile() {
+    this.router.navigateByUrl('/inicio-mobile')
+  }
+
   telaPerguntas() {
     this.router.navigateByUrl('/perguntas')
   }

@@ -1,0 +1,38 @@
+<section class="usuario">
+    <div class="conta-pessoa-usuaria">
+        <mat-icon (click)="paginaUsuario()">account_circle</mat-icon>
+    </div>
+    <div class="box-cards-exercicios">
+        <p>Escolha a área que você deseja fazer exercícios: </p>
+        <div class="area-botoes-stacks">
+            <button class="botoes-areas" (click)="paginaFront()">Front-end</button>
+            <button class="botoes-areas" (click)="paginaBack()">Back-end</button>
+            <button class="botoes-areas">Mobile</button>
+        </div>
+        <div class="cards-questionario">
+            <mat-card class="example-card">
+                <div class="area-conhecimento">
+                    <span>React Native</span>
+                </div>
+                <mat-card-actions>
+                    <button mat-raised-button color="basic">
+                        Começar
+                        <mat-icon>arrow_right_alt</mat-icon>
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+            <mat-card class="example-card">
+                <div class="area-conhecimento">
+                    <span>Flutter</span>
+                </div>
+                <mat-card-actions>
+                    <button mat-raised-button color="basic">
+                        Começar
+                        <mat-icon>arrow_right_alt</mat-icon>
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</section>
+

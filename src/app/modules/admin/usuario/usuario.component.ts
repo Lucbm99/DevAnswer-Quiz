@@ -15,6 +15,10 @@ export class UsuarioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  voltarPagina() {
+    this.router.navigateByUrl("/inicio");
+  }
+
   dadosAlterados() {
     this.router.navigateByUrl("/inicio");
   }
