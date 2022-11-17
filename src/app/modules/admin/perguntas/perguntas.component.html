@@ -1,11 +1,12 @@
-<section class="perguntas">
-    <p>1. O atributo alt é utilizado para fins de acessibilidade em qual  tag no HTML?</p>
+<section class="perguntas" *ngFor="let questao of listaPerguntas">
+    <!-- <p>1. O atributo alt é utilizado para fins de acessibilidade em qual  tag no HTML?</p> -->
+    <p>{{ questao.enunciado }}</p>
 
     <mat-radio-group
         aria-labelledby="example-radio-group-label"
         class="example-radio-group">
-        <mat-radio-button class="example-radio-button" *ngFor="let opcao of opcoes" [value]="opcao">
-            {{ opcao }}
+        <mat-radio-button class="example-radio-button" [value]="questao.opcoes">
+            {{ questao.opcoes }}
         </mat-radio-button>
     </mat-radio-group>
 

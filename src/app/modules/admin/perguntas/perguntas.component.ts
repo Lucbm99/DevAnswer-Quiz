@@ -1,3 +1,4 @@
+import { PerguntasService } from './perguntas.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerguntasComponent implements OnInit {
 
-  constructor() { }
   opcoes: string[] = ['<p>', '<span>', '<img>', '<meta>'];
+  public listaPerguntas: any; 
+  
+  constructor(
+    private _perguntasService: PerguntasService,
+  ) { }
 
   ngOnInit(): void {
+    this._perguntasService.getPerguntas().subscribe((response) => {
+      // if(response) {}
+
+      this.listaPerguntas = response.data;
+    })
   }
 
 }
