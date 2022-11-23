@@ -3,22 +3,25 @@
 
     <div class="box-login">
         <p class="texto-login">Login</p>
-        <span class="cadastro">Não tem uma conta? <a routerLink="/cadastro">Cadastre-se</a></span>
 
         <form class="campos">
-            <mat-form-field appearance="outline">
-                <mat-label>E-mail:</mat-label>
-                <input matInput type="email" placeholder="Digite seu e-mail...">
-            </mat-form-field>
-            <mat-form-field appearance="outline">
-                <mat-label>Senha:</mat-label>
-                <input matInput type="password" placeholder="Digite sua senha...">
-            </mat-form-field>
+            <!-- <div class="campos-login"> -->
+                <mat-form-field appearance="outline">
+                    <mat-label>E-mail:</mat-label>
+                    <input matInput type="email" placeholder="Digite seu e-mail...">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Senha:</mat-label>
+                    <input matInput type="password" placeholder="Digite sua senha...">
+                </mat-form-field>
+            <!-- </div> -->
         </form>
         
         <div class="fazer-login">
             <button class="botao-login" (click)="fazerLogin()">Entrar</button>
             <a class="esquecer-senha" routerLink="/esquecer-senha">Esqueceu a senha?</a>
         </div>
+        <button class="botao-cadastro">Cadastre-se</button>
+
     </div>
 </section>

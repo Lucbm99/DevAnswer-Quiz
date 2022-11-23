@@ -23,8 +23,10 @@
             color: #fff;
             font-family: 'Inter', sans-serif;
             font-style: normal;
-            font-size: 1.4rem;
+            font-size: 2rem;
             font-weight: 700;
+            display: flex;
+            justify-content: center;
         }
 
         .cadastro {
@@ -33,11 +35,14 @@
             font-weight: 400;
             font-family: 'Inter', sans-serif;
             margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
             
             a {
                 color: #78B5FD;
                 cursor: pointer;
                 text-decoration: none;
+                margin-left: 0.4rem;
 
                 &:hover {
                     text-decoration: underline;
@@ -50,8 +55,10 @@
             margin-top: 1rem;
             display: flex;
             flex-direction: column;
+            align-self: center;
             line-height: 2rem;
             color: #fff;
+            width: 40%;
 
             // mat-icon-stepper selected color change 
             ::ng-deep .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
@@ -104,10 +111,29 @@
 
             .botao-login {
                 padding: 0.5rem;
-                width: 20%;
+                width: 40%;
                 display: flex;
                 justify-content: center;
                 background-color: #3190E8;
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+                border: 1px solid #111;
+                border-radius: 10px;
+                color: #fff;
+                cursor: pointer;
+        
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            .botao-cadastro {
+                padding: 0.5rem;
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                background-color: blue;
                 font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 400;
