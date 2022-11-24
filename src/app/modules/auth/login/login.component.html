@@ -19,9 +19,13 @@
         
         <div class="fazer-login">
             <button class="botao-login" (click)="fazerLogin()">Entrar</button>
-            <a class="esquecer-senha" routerLink="/esquecer-senha">Esqueceu a senha?</a>
         </div>
-        <button class="botao-cadastro">Cadastre-se</button>
+        <div class="esquecer-senha">
+            <button class="botao-esquecer-senha" (click)="telaEsquecerSenha()">Esqueceu a senha</button>
+        </div>
+        <div class="fazer-cadastro">
+            <button class="botao-cadastro" (click)="telaCadastro()">Cadastre-se</button>
+        </div>
 
     </div>
 </section>

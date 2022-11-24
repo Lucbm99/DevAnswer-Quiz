@@ -19,4 +19,12 @@ export class LoginComponent implements OnInit {
     this.router.navigateByUrl('/inicio');
   }
 
+  telaEsquecerSenha() {
+    this.router.navigateByUrl('/esquecer-senha');
+  }
+
+  telaCadastro() {
+    this.router.navigateByUrl('/cadastro');
+  }
+
 }

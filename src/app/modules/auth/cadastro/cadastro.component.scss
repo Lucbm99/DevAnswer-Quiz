@@ -1,6 +1,18 @@
 .cadastro {
     padding: 2rem;
 
+    .logo {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3rem;
+    }
     .box-cadastro {
         display: flex;
         flex-direction: column;
@@ -11,8 +23,9 @@
             color: #fff;
             font-family: 'Inter', sans-serif;
             font-style: normal;
-            font-size: 1.4rem;
+            font-size: 2rem;
             font-weight: 700;
+            text-align: center;
         }
 
         .descricao-cadastro {
@@ -21,6 +34,7 @@
             font-weight: 400;
             font-family: 'Inter', sans-serif;
             margin-top: 1.5rem;
+            text-align: center;
             
             a {
                 color: #78B5FD;
@@ -38,9 +52,11 @@
             margin-top: 1rem;
             display: flex;
             flex-direction: column;
+            align-self: center;
             line-height: 2rem;
             color: #fff;
-
+            width: 40%;
+            
             // mat-icon-stepper selected color change 
             ::ng-deep .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
                 color: #fff!important;
@@ -74,7 +90,7 @@
 
             .botao-cadastro {
                 padding: 0.5rem;
-                width: 20%;
+                width: 40%;
                 display: flex;
                 justify-content: center;
                 font-family: 'Inter', sans-serif;
