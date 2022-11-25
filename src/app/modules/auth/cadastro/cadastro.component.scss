@@ -24,28 +24,9 @@
             font-family: 'Inter', sans-serif;
             font-style: normal;
             font-size: 2rem;
+            margin-top: 1.5rem;
             font-weight: 700;
             text-align: center;
-        }
-
-        .descricao-cadastro {
-            color: #fff;
-            font-size: 1rem;
-            font-weight: 400;
-            font-family: 'Inter', sans-serif;
-            margin-top: 1.5rem;
-            text-align: center;
-            
-            a {
-                color: #78B5FD;
-                cursor: pointer;
-                text-decoration: none;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-
-            }
         }
 
         .campos {
@@ -107,6 +88,26 @@
                 &:hover {
                     text-decoration: underline;
                 }
+            }
+        }
+        
+        .descricao-cadastro {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: 'Inter', sans-serif;
+            margin-top: 0.5rem;
+            text-align: center;
+            
+            a {
+                color: #78B5FD;
+                cursor: pointer;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
             }
         }
     }
